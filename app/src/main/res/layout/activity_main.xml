@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:monkey="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <com.monkey.miclockview.view.MiClockView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        monkey:backgroundColor="#000000"
+        monkey:darkColor="#80ffffff"
+        monkey:lightColor="#ffffff"
+        monkey:textSize="14sp" />
+
+    <!--蓝色monkey:backgroundColor="#237EAD"-->
+
+    <com.monkey.miclockview.view.LEDView
+        android:layout_marginTop="450dp"
+        android:id="@+id/led_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.monkey.miclockview.view.LEDView>
+
+
+    <TextView
+        android:layout_marginTop="510dp"
+        android:id="@+id/text_date"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
